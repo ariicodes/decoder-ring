@@ -18,16 +18,17 @@ const caesarModule = (function () {
 
 		let result = '';
 		const alphabet = 'abcdefghijklmnopqrstuvwxyz';
+		const alphaArr = alphabet.split('');
 		const alteredString = input.toLowerCase().split('');
 
-		alteredString.forEach(character => {
-			const characterIndex = alphabet.indexOf(character);
-			if (characterIndex === -1) {
-				result += character;
+		alteredString.forEach(char => {
+			if (!/[a-z]/.test(char)) {
+				result += char;
 			} else {
-				let indexShift = characterIndex + (encode ? shift : -shift);
-				indexShift = (indexShift + 26) % 26;
-				result += alphabet[indexShift];
+				const charIndex = alphaArr.indexOf(char);
+				let shiftedIndex = charIndex + (encode ? shift : -shift);
+				shiftedIndex = (shiftedIndex + 26) % 26;
+				result += alphaArr[shiftedIndex];
 			}
 		});
 		return result;
