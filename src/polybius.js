@@ -9,34 +9,17 @@ const polybiusModule = (function () {
 	function polybius(input, encode = true) {
 		// your solution code here
 		let result = '';
-		const coordinates = {
-			a: 11,
-			b: 21,
-			c: 31,
-			d: 41,
-			e: 51,
-			f: 12,
-			g: 22,
-			h: 32,
-			i: 42,
-			j: 42,
-			k: 52,
-			l: 13,
-			m: 23,
-			n: 33,
-			o: 43,
-			p: 53,
-			q: 14,
-			r: 24,
-			s: 34,
-			t: 44,
-			u: 54,
-			v: 15,
-			w: 25,
-			x: 35,
-			y: 45,
-			z: 55,
-		};
+		const square = [
+      ['a', 'b', 'c', 'd', 'e'], 
+      ['f', 'g', 'h', 'i/j', 'k'], 
+      ['l', 'm', 'n', 'o', 'p'], 
+      ['q', 'r', 's', 't', 'u'], 
+      ['v', 'w', 'x', 'y', 'z']
+    ];
+
+		// var pair = 21
+		// x = 2, y = 1
+		// alphabet[2][1][“H”]
 	}
 
 	return {
