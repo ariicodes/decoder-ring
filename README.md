@@ -1,5 +1,5 @@
 # Decoder Ring
-View the live site here: https://ariicodes.github.io/decoder-ring/
+View the live site here: https://decoder-ring.ariicodes.com/
 
 ## Overview
 
